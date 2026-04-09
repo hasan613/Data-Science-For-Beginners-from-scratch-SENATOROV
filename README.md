@@ -11,6 +11,9 @@
 - Идея создания новой ветки при сдаче ДЗ, [ишьюс](https://github.com/SENATOROVAI/Data-Science-For-Beginners-from-scratch-SENATOROV/issues/545), спасибо [dshilin](https://github.com/dshilin)
 - Реализация создания новой ветки при сдаче ДЗ, [ишьюс](https://github.com/SENATOROVAI/Data-Science-For-Beginners-from-scratch-SENATOROV/issues/557), спасибо [SERG-1613](https://github.com/SERG-1613)
 - Убрать из ишьюс python ссылку на инструкцию ревью, [ишьюс](https://github.com/SENATOROVAI/intro/issues/17), спасибо [stokato](https://github.com/stokato)
+- Улучшен [ишьюс Виртуальное окружение](https://github.com/SENATOROVAI/intro-cs/issues/7), [обновлено описание и добавлено видео](https://github.com/user-attachments/assets/eda6f086-4804-4dfa-80d7-172c301791a4), спасибо [solik220-bit](https://github.com/solik220-bit)
+
+
 
 
 # Улучшения курсов
@@ -37,6 +40,7 @@
 - Ошибка в выводе задания [Холецкий](https://stepik.org/lesson/1886772/step/4?unit=1912264), [ишьюс](https://github.com/SENATOROVAI/cholesky-stepik/issues/1), спасибо  [J4zzyflavor](https://github.com/J4zzyflavor) доп. акк  [Jazzyflavor](https://github.com/Jazzyflavor)
 - Опечатка в слове "константа", курс [GD](https://stepik.org/lesson/1829077/step/13?unit=1855099), [ишьюс](https://github.com/SENATOROVAI/multy-linear-regression-gradient-descent-stepik/issues/2), спасибо [Lookmir](https://github.com/Lookmir)
 - Опечатка в слове "ортогонализации", курс [QR](https://stepik.org/lesson/1880356/step/3?unit=1905773), [ишьюс](https://github.com/SENATOROVAI/qr-stepik/issues/1), спасибо [svetlana-s88](https://github.com/svetlana-s88)
+- Старая ссылка на репозиторий в курсе по [линтерам](https://stepik.org/lesson/1711926/step/6?unit=1735359), спасибо [solik220-bit](https://github.com/solik220-bit)
 
 # Улучшение организации
 - Обновление интро,внедрение раздела о нас, договора, средства коммуникации, спасибо [ViktorVinogradov89](https://github.com/ViktorVinogradov89)
@@ -182,17 +186,7 @@ This repository is designed for:
 
 ## 📬 Contact
 
-Course page:  
-https://stepik.org/users/308359458/profile  
-
-YouTube:  
-https://youtube.com/SENATOROV  
-
-Telegram School:  
-https://t.me/SENATOROVAI  
-
-Telegram Founder:  
-https://t.me/RuslanSenatorov  
+#### https://SenatorovAI.com
 
 ---
 
