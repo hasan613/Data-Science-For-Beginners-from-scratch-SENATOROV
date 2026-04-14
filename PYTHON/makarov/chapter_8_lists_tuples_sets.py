@@ -533,5 +533,3 @@ print(cv - nlp)
 # но не в обеих областях одновременно
 print(nlp.symmetric_difference(cv))
 print(nlp ^ cv)
-
-
