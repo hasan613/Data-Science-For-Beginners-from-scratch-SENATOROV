@@ -12,7 +12,8 @@
 # +
 # пустой список можно создать через [] или функцию list()
 # импортируем класс стеммера и создаем объект
-from nltk.stem import PorterStemmer
+
+# from nltk.stem import PorterStemmer
 
 some_list_1: list[str] = []
 some_list_2: list[str] = list()  # pylint: disable=R1734
@@ -28,7 +29,7 @@ number_three: list[int | str | list[str] | dict[str, int]] = [
     ["число", "три"],
     {"число": 3},
 ]
-number_three
+# number_three
 
 # длина списка рассчитывается через функцию len()
 len(number_three)
@@ -51,7 +52,7 @@ salary_list: list[list[str | int]] = [
 ]
 
 # мы вначале указываем индекс вложенного списка, а затем индекс элемента в нем
-salary_list[1][0]
+# salary_list[1][0]
 # -
 
 # индекс можно узнать с помощью метода .index()
@@ -65,14 +66,14 @@ salary_list[0].index(90000)
 days_list: list[str] = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 
 # и выведем со второго по пятый элемент включительно
-days_list[1:5]
+# days_list[1:5]
 # -
 
 # выведем каждый второй элемент в срезе с первого по пятый
-days_list[:5:2]
+# days_list[:5:2]
 
 # проверим есть ли "Пн" в списке
-"Пн" in days_list
+# "Пн" in days_list
 
 # если "Вт" есть в списке
 if "Вт" in days_list:
@@ -87,31 +88,31 @@ weekdays: list[str] = ["Понедельник", "Вторник"]
 
 # добавим один элемент в конец списка с помощью метода .append()
 weekdays.append("Четверг")
-weekdays
+# weekdays
 
 # добавим элемент в определенное место в списке
 # через желаемый индекс этого элемента
 weekdays.insert(2, "Среда")
-weekdays
+# weekdays
 
 # изменим четвертый элемент в списке
 weekdays[3] = "Пятница"
-weekdays
+# weekdays
 
 # удалим элемент по его значению
 weekdays.remove("Пятница")
-weekdays
+# weekdays
 
 # удалим элемент по его индексу через ключевое слово del
 del weekdays[2]
-weekdays
+# weekdays
 
 # сделаем то же самое с помощью метода .pop()
 # этот метод выводит удаляемый элемент
 weekdays.pop(1)
 
 # посмотрим, что осталось в нашем списке
-weekdays
+# weekdays
 
 # Сложение списков
 
@@ -120,7 +121,7 @@ weekdays
 more_weekdays: list[str] = ["Вторник", "Среда", "Четверг", "Пятница"]
 
 weekdays.extend(more_weekdays)
-weekdays
+# weekdays
 
 # +
 weekend: list[str] = ["Суббота", "Воскресенье"]
@@ -152,27 +153,27 @@ week: list[str] = [
 
 # указав индекс элемента, его можно записать в переменную
 monday = week[0]
-monday
+# monday
 
 # +
 # срез можно поместить в несколько переменных
 monday, tuesday, wednesday = week[:3]
 
 # важно, чтобы количество элементов среза было равно количеству переменных
-monday, tuesday, wednesday
+# monday, tuesday, wednesday
 # -
 
 # можно выделить первый элемент, а остальные поместить
 # в переменную со звездочкой
 monday, *rest = week
-monday
+# monday
 
 # также можно поступить, например, с первым и последним элементом
 monday, *days, sunday = week
-monday, sunday
+# monday, sunday
 
 # посмотрим, какие элементы остались в переменной со звездочкой
-days
+# days
 
 # Сортировка списков
 
@@ -183,25 +184,25 @@ nums: list[int] = [25, 10, 30, 20, 5, 15]
 sorted(nums)
 
 # исходный список при этом не изменился
-nums
+# nums
 
 # если поместить результат в переменную, изменения сохранятся
 sorted_nums = sorted(nums)
-sorted_nums
+# sorted_nums
 
 # метод .sort() сохраняет результат, но не выводит его сразу
 # reverse = True задает сортировку по убыванию
 nums.sort(reverse=True)
 
 # выведем результат
-nums
+# nums
 
 # +
 # метод .reverse() задает обратный порядок, сохраняет, но не выводит результат
 nums.reverse()
 
 # его также нужно вывести отдельно
-nums
+# nums
 # -
 
 # функция reversed() возвращает итератор
@@ -211,7 +212,7 @@ reversed(nums)
 list(reversed(nums))
 
 # результат при этом не сохраняется
-nums
+# nums
 
 # Преобразование списка в строку
 
@@ -220,12 +221,12 @@ str_list: list[str] = ["P", "y", "t", "h", "o", "n"]
 
 # с помощью метода .join() можно соединить все элементы
 joined_str = "".join(str_list)
-joined_str
+# joined_str
 
 # если в кавычках ничего не указывать, элементы просто соединятся,
 # но можно указать любой другой элемент
 joined_str_ = "_".join(str_list)
-joined_str_
+# joined_str_
 
 # Арифметика в списках
 
@@ -269,22 +270,23 @@ for name in names:
         a_names.append(name)
 
 # выведем результат
-a_names
+# a_names
 # -
 
 # эту же задачу можно решить через list comprehension
-# по сути мы пишем: "что сделать, пока есть элемент в списке, при каком условии"
+# по сути мы пишем: "что сделать, пока есть элемент в списке, при каком
+# условии"
 a_names = [name for name in names if name.startswith("А")]
-a_names
+# a_names
 
 # переведем все буквы в строчные, условие здесь не нужно
 lower_names = [name.lower() for name in names]
-lower_names
+# lower_names
 
 # схема условия if-else немного отличается
 # оставляем имя, если это не Виктор, если Виктор - заменяем на Вадим
 replace_name = [name if name != "Виктор" else "Вадим" for name in names]
-replace_name
+# replace_name
 
 # +
 # на занятии по обработке естественного языка с помощью list comprehension
@@ -315,11 +317,11 @@ lemmatized: list[str] = [
 ]
 
 
-porter = PorterStemmer()
+# porter = PorterStemmer()
 
 # применяем стеммер к элементу s, пока есть элементы s в списке lemmatized
-stemmed_p = [porter.stem(s) for s in lemmatized]
-print(stemmed_p)
+# stemmed_p = [porter.stem(s) for s in lemmatized]
+# print(stemmed_p)
 # -
 
 # ### Кортежи
@@ -334,7 +336,7 @@ print(tuple_1, tuple_2)
 
 # в кортеже элементы упорядочены, а значит есть индекс
 letters: tuple[str, ...] = ("a", "b", "c")
-letters[0]
+# letters[0]
 
 # +
 # но изменить элемент, как мы это делали в списке, нельзя
@@ -343,8 +345,8 @@ letters[0]
 
 # для изменения элемента кортеж вначале нужно преобразовать в список
 letters_list = list(letters)
-letters_list[0] = "d"
-letters_list
+# letters_list[0] = "d"
+# letters_list
 
 # кортеж из одного элемента можно создать с помощью запятой
 letters_a: tuple[str] = ("a",)
@@ -461,19 +463,19 @@ vowels: set[str] = {"а", "о", "э", "е", "у", "ё", "ю"}
 
 # добавим одну букву "я" методом .add()
 vowels.add("я")
-vowels
+# vowels
 
 # добавим две буквы "и" и "ы" методом .update()
 vowels.update(["и", "ы"])
-vowels
+# vowels
 
 # если по ошибке мы добавим согласную букву,
 vowels.add("щ")
-vowels
+# vowels
 
 # ее можно удалить методом .remove()
 vowels.remove("щ")
-vowels
+# vowels
 
 # Теория множеств в Питоне
 
